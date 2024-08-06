@@ -3,6 +3,9 @@
 #include <memory>
 #include <cstdint>
 
+//i not have parameta data.LOLOLOLOLOLOLOL
+
+
 enum class Stats {
 	None=0,
 	Spark,

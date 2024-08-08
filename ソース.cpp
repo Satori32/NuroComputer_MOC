@@ -23,6 +23,7 @@ struct Data
 	SPoint Other=nullptr;
 	Stats S;
 	double Velocity = 0;
+	double Time = 0;
 };
 
 struct Node

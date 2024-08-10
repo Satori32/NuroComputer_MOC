@@ -7,6 +7,8 @@
 
 
 enum class Stats {
+	NegaSpark=-1,
+	NegaNone =8,
 	None=0,
 	Spark,
 };

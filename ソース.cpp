@@ -6,11 +6,9 @@
 //i not have parameta data.LOLOLOLOLOLOLOL
 
 
-enum class Stats {
-	NegaSpark=-1,
-	NegaNone =8,//why this is 8?
-	None=0,
-	Spark,
+enum class Spark {
+	None=8,
+	Spark=1,
 };
 
 struct Point
@@ -20,12 +18,18 @@ struct Point
 
 typedef std::shared_ptr<Point> SPoint;
 
+struct NewroStats
+{
+	Spark S{};
+	double Verocity = 0;
+	double Time = 0;
+};
+
 struct Data
 {
 	SPoint Other=nullptr;
-	Stats S;
-	double Velocity = 0;
-	double Time = 0;
+	NewroStats SparkPosi{};
+	NewroStats SparlNega{};
 };
 
 struct Node

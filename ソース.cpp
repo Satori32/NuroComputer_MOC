@@ -5,10 +5,21 @@
 
 //i not have parameta data.LOLOLOLOLOLOLOL
 
+enum class Ganble3{//丁半ばくち、丁＝Allow,半＝Denie、１、胴元？　２，プレイヤー？　３、ささやき？　４、観測者？
+	Satou = 2,
+	Yamazaki = 1,
+	Yanoji = 3,
+	Sanoji = 4,
+	kuuhaku = 2,
+};
 
 enum class Spark {
 	None=8,
-	Spark=1,
+	MiraNew=0,
+	Tron=1,
+	MiraOld=2,
+	Oranos=4,
+	SystenRequest=99,
 };
 
 struct Point
@@ -29,7 +40,7 @@ struct Data
 {
 	SPoint Other=nullptr;
 	NewroStats SparkPosi{};
-	NewroStats SparlNega{};
+	//NewroStats SparlNega{};
 };
 
 struct Node
